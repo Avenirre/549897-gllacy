@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Roman Vinokurov](https://up.htmlacademy.ru/htmlcss/19/user/549897).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Сёмушкин](https://htmlacademy.ru/profile/id48647).
 
 ---
 
