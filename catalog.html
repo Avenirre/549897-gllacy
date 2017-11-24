@@ -12,8 +12,8 @@
 <header class="header catalog-header">
   <div class="main-navigation-wrap">
   <nav class="main-navigation">
-    <a href="index.html" class="main-header-logo">
-      <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина 'Глейси' и ссылка на главную страницу">
+    <a href="index.html" >
+      <img src="img/logo.svg" class="main-header-logo" width="154" height="64" alt="Логотип магазина 'Глейси' и ссылка на главную страницу">
     </a>
     <ul class="site-navigation">
       <li>
@@ -144,108 +144,104 @@
     </li>
   </ul>
   </div>
-  <div class="inner-navigation-wrap">
-    <ul class="breadcrumbs">
-      <li>
-        <a href="index.html">Главная</a>
-      </li>
-      <li>
-        <a href="#">Каталог</a>
-      </li>
-      <li>
-        <a>Сливочное</a>
-      </li>
-    </ul>
     <div class="contacts-flex">
       <p class="contacts">С 10 до 20, ежедневно </p>
       <p class="contacts-telephone">8 812 450 25 25</p>
     </div>
-  </div>
 </header>
 
 <main class="container">
+  <ul class="breadcrumbs">
+  <li>
+    <a href="index.html">Главная</a>
+  </li>
+  <li>
+    <a href="#">Каталог</a>
+  </li>
+  <li>
+    <a>Сливочное</a>
+  </li>
+</ul>
   <section class="parameters">
     <h1>Сливочное мороженое</h1>
     <form class="parameters-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="parameters-flex1">
-          <fieldset>
-            <label for="sorting">Сортировка</label>
-            <select class="sorting" id="sorting" name="sorting">
+          <fieldset class="parameters-fieldset sorting">
+            <label for="sorting">Сортировка:</label>
+            <select id="sorting" name="sorting">
               <option value="popular">По популярности</option>
               <option value="cheap">Сначала недорогие</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
           </fieldset>
-          <p>
+          <fieldset class="parameters-fieldset">
+            <div class="slider-range">
             <label for="slider">Цена: 100 руб. - 500 руб.</label>
-            <input type="range" id="slider" min="0" step="50" max="700" data-values="100 600">
-          </p>
-          <fieldset>
+            <input type="range" id="slider">
+            </div>
+          </fieldset>
+          <fieldset class="parameters-fieldset fatcontent">
             <legend>Жирность:</legend>
             <ul class="param-radio" id="radio">
               <li>
                 <p>
-                  <label for="0">0%</label>
                   <input type="radio" id="0" name="fatcontent" value="0">
+                  <label for="0">0%</label>
                 </p>
               </li>
               <li>
                 <p>
-                  <label for="10">До 10%</label>
                   <input type="radio" id="10" name="fatcontent" value="10">
+                  <label for="10">До 10%</label>
                 </p>
               </li>
               <li>
                 <p>
-                  <label for="30">До 30%</label>
                   <input type="radio" id="30" name="fatcontent" value="30">
+                  <label for="30">До 30%</label>
                 </p>
               </li>
               <li>
                 <p>
-                  <label for="30+">Выше 30%</label>
                   <input type="radio" id="30+" name="fatcontent" value="30+">
+                  <label for="30+">Выше 30%</label>
                 </p>
               </li>
             </ul>
           </fieldset>
-        </div>
-        <div class="parameters-flex2">
-          <fieldset>
-            <legend>Наполнители</legend>
+          <fieldset class="parameters-fieldset">
+            <legend>Наполнители:</legend>
             <ul class="param-checkbox" id="checkbox">
               <li>
                 <p>
-                  <label for="chocolate">Шоколадные</label>
                   <input type="checkbox" id="chocolate" name="filler" value="Шоколадные">
+                  <label for="chocolate">Шоколадные</label>
                 </p>
               </li>
               <li>
                 <p>
-                  <label for="shugar">Сахарные присыпки</label>
                   <input type="checkbox" id="shugar" name="filler" value="Сахарные присыпки">
+                  <label for="shugar">Сахарные присыпки</label>
                 </p>
               </li>
               <li>
                 <p>
-                  <label for="fruits">Фрукты</label>
                   <input type="checkbox" id="fruits" name="filler" value="Фрукты">
+                  <label for="fruits">Фрукты</label>
                 </p>
               </li>
               <li>
-                <label for="syrup">Сиропы</label>
                 <input type="checkbox" id="syrup" name="filler" value="Сиропы">
+                <label for="syrup">Сиропы</label>
               </li>
               <li>
                 <p>
-                  <label for="jam">Джемы</label>
                   <input type="checkbox" id="jam" name="filler" value="Джемы">
+                  <label for="jam">Джемы</label>
                 </p>
               </li>
             </ul>
           </fieldset>
           <button type="submit" class="button-param">Применить</button>
-        </div>
     </form>
   </section>
   <section class="catalog">
@@ -454,10 +450,12 @@
     </li>
   </ul>
   <p class="footer-copyright">
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">
       <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип htmlAcademy и cсылка на сайт htmlAcademy">
     </a>
-    Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a> © 2016
+    Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy
+  </a>
+    © 2016
   </p>
 </footer>
 

@@ -36,21 +36,31 @@ a:hover {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 .header {
   display: flex;
   flex-direction: column;
 
-  width: 1148px;
-
-  margin-left: 26px;
-  margin-right: 26px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 26px;
 }
 
 .main-header {
-  margin-bottom: 430px;
+  margin-bottom: -170px;
+}
+
+.main-header-logo {
+  margin-top: 8px;
 }
 
 .catalog-header {
@@ -60,29 +70,45 @@ a:hover {
 .main-navigation-wrap {
   display: flex;
   justify-content: space-between;
-
-  margin-bottom: 20px;
 }
 
-.inner-navigation-wrap {
+.main-navigation{
   display: flex;
   justify-content: space-between;
+
+  width: 528px;
+}
+
+.main-navigation > a {
+  width: 154px;
 }
 
 .site-navigation {
-  list-style: none;
+ display: flex;
+  justify-content: space-between;
 
-  width: 530px;
-  margin: 0;
+  width: 350px;
+  margin-top: 23px;
+  margin-bottom:0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .user-block {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
 
-  width: 267px;
-  margin: 0;
+  width: 262px;
+  margin-top: 23px;
+  margin-bottom:0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .navigation-point {
@@ -228,16 +254,16 @@ a:hover {
 .contacts-flex {
   align-self: flex-end;
 
-  width: 200px;
+  width: 165px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
 
-  margin: 0px 26px;
-
-  width: 1148px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 26px;
 }
 
 .contacts {
@@ -256,7 +282,7 @@ a:hover {
   margin-bottom: 40px;
 }
 
-.slider b {
+.slider-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 60.35px;
@@ -430,38 +456,48 @@ a:hover {
 }
 
 .breadcrumbs {
-  list-style: none;
-  width: 267px;
+  display: flex;
 
-  margin: 0;
+  width: 267px;
+  margin-top: -60px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs li:not(:last-child)::after {
   content: ">>";
 }
+
 .parameters {
   margin-bottom: 40px;
 }
 
 .parameters-form {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 865px;
+  border: 1px solid red;
+}
+
+.parameters-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.slider-range {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
-  width: 879px;
-}
-
-.parameters-flex1 {
-  display: flex;
-
-  width: 879px;
-}
-
-.parameters-flex2 {
-  display: flex;
-
-  width: 879px;
+  width: 220px;
 }
 
 .parameters h1 {
@@ -470,7 +506,8 @@ a:hover {
   line-height: 41px;
 }
 
-.parameters label {
+.parameters-fieldset > label,
+.slider-range > label {
   font-size: 14px;
   line-height: 16px;
 }
@@ -481,11 +518,24 @@ a:hover {
 }
 
 .sorting {
-  width: 193px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  width: 195px;
 }
 
-.sorting option {
+.sorting select{
   line-height: 18px;
+  background-color: #a9b9af;
+}
+
+.fatcontent {
+  display: flex;
+  flex-direction: column;
+
+  width: 422px;
 }
 
 .param-radio {
@@ -516,10 +566,6 @@ a:hover {
   list-style: none;
 }
 
-.param-checkbox li {
-  width: 186px;
-}
-
 .param-checkbox label {
   line-height: 18px;
 }
@@ -547,6 +593,12 @@ a:hover {
   display: none;
 }
 
+.map {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pagination-list {
   display: flex;
   justify-content: flex-end;
@@ -572,12 +624,13 @@ a:hover {
   display: flex;
   justify-content: space-between;
 
-  width: 1148px;
+  width: 1200px;
 
   margin-top: 20px;
   margin-bottom: 26px;
-  margin-left: 26px;
-  margin-right: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 26px;
 }
 
 .footer-social {
@@ -594,7 +647,6 @@ a:hover {
   margin-right: 12px;
 }
 
-
 .footer-info {
   list-style: none;
 
@@ -603,6 +655,10 @@ a:hover {
 
 .footer-copyright {
   width: 267px;
+}
+
+.htmlacademy {
+  text-decoration: none;
 }
 
 .button {
@@ -630,14 +686,6 @@ button:active {
   background-color: #9bafa3;
 }
 
-.sorting {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #ffffff;
-
-  background-color: #a9bab0;
-}
 
 /*временное скрытие выпадающих форм*/
 .sub-menu,
@@ -645,7 +693,6 @@ button:active {
 .login,
 .basket,
 .feedback,
-.slider-1,
 .slider-2,
 .slider-3 {
 display: none;
