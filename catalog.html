@@ -17,7 +17,7 @@
     </a>
     <ul class="site-navigation">
       <li>
-        <a  class="navigation-point selected">Каталог</a>
+        <a   href="#" class="navigation-point selected">Каталог</a>
         <!--Выпадающее меню-->
         <ul class="sub-menu">
           <li>
@@ -183,25 +183,25 @@
             <legend>Жирность:</legend>
             <ul class="param-radio" id="radio">
               <li>
-                <p>
+                <p class="radio-wrap">
                   <input type="radio" id="0" name="fatcontent" value="0">
                   <label for="0">0%</label>
                 </p>
               </li>
               <li>
-                <p>
+                <p class="radio-wrap">
                   <input type="radio" id="10" name="fatcontent" value="10">
                   <label for="10">До 10%</label>
                 </p>
               </li>
               <li>
-                <p>
+                <p class="radio-wrap">
                   <input type="radio" id="30" name="fatcontent" value="30">
                   <label for="30">До 30%</label>
                 </p>
               </li>
               <li>
-                <p>
+                <p class="radio-wrap">
                   <input type="radio" id="30+" name="fatcontent" value="30+">
                   <label for="30+">Выше 30%</label>
                 </p>
@@ -212,29 +212,31 @@
             <legend>Наполнители:</legend>
             <ul class="param-checkbox" id="checkbox">
               <li>
-                <p>
+                <p class="checkbox-wrap">
                   <input type="checkbox" id="chocolate" name="filler" value="Шоколадные">
                   <label for="chocolate">Шоколадные</label>
                 </p>
               </li>
               <li>
-                <p>
+                <p class="checkbox-wrap">
                   <input type="checkbox" id="shugar" name="filler" value="Сахарные присыпки">
                   <label for="shugar">Сахарные присыпки</label>
                 </p>
               </li>
               <li>
-                <p>
+                <p class="checkbox-wrap">
                   <input type="checkbox" id="fruits" name="filler" value="Фрукты">
                   <label for="fruits">Фрукты</label>
                 </p>
               </li>
               <li>
+                <p class="checkbox-wrap">
                 <input type="checkbox" id="syrup" name="filler" value="Сиропы">
                 <label for="syrup">Сиропы</label>
+                </p>
               </li>
               <li>
-                <p>
+                <p class="checkbox-wrap">
                   <input type="checkbox" id="jam" name="filler" value="Джемы">
                   <label for="jam">Джемы</label>
                 </p>
@@ -436,14 +438,13 @@
   </ul>
   <ul class="footer-info">
     <li>
-      <img src="img/heart.svg" width="32" height="32" alt="Сердечко">
       <a href="#">Для поставщиков</a>
     </li>
     <li>
-      <a href="#">О производстве</a>
+      <a href="#">Наши документы</a>
     </li>
     <li>
-      <a href="#">Наши документы</a>
+      <a href="#">О производстве</a>
     </li>
     <li>
       <a href="#">Экологические стандарты</a>
@@ -453,9 +454,10 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy">
       <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип htmlAcademy и cсылка на сайт htmlAcademy">
     </a>
-    Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy
-  </a>
-    © 2016
+    <span class="htmlacademy-wrapper">
+    Сделано в  <a href="https://htmlacademy.ru/intensive/htmlcss">Html Academy </a> © 2017
+    </span>
+
   </p>
 </footer>
 
