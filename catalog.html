@@ -41,7 +41,7 @@
         <a href="#" class="navigation-point">Доставка и оплата</a>
       </li>
       <li>
-        <a href="#" class="navigation-point">О компании</a>
+        <a href="#" class="navigation-point">О Компании</a>
       </li>
     </ul>
   </nav>
@@ -152,13 +152,13 @@
 
 <main class="container">
   <ul class="breadcrumbs">
-  <li>
+  <li class="breadcrumbs-page">
     <a href="index.html">Главная</a>
   </li>
-  <li>
+  <li class="breadcrumbs-page">
     <a href="#">Каталог</a>
   </li>
-  <li>
+  <li class="breadcrumbs-page">
     <a>Сливочное</a>
   </li>
 </ul>
@@ -175,7 +175,13 @@
           </fieldset>
           <fieldset class="parameters-fieldset slider-range">
             <legend>Цена: 100 руб. - 500 руб.</legend>
-            <input type="range" id="slider">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
           </fieldset>
           <fieldset class="parameters-fieldset fatcontent">
             <legend>Жирность:</legend>
@@ -375,11 +381,6 @@
     </ul>
     <ul class="pagination-list" id="pagination-list">
       <li>
-        <a class="pagination-item">
-          <
-        </a>
-      </li>
-      <li>
         <a class="pagination-item page-selected">1</a>
       </li>
       <li >
@@ -393,11 +394,6 @@
       </li>
       <li>
         <a  class="pagination-item" href="#">5</a>
-      </li>
-      <li>
-        <a  class="pagination-item" href="#">
-          >
-        </a>
       </li>
     </ul>
   </section>
