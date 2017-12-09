@@ -21,12 +21,12 @@
                  alt="Логотип магазина 'Глейси' и ссылка на главную страницу">
           </a>
           <ul class="site-navigation">
-            <li>
+            <li class="navigation-submenu">
               <a class="navigation-point">Каталог</a>
               <!--Выпадающее меню-->
               <ul class="sub-menu">
                 <li>
-                  <a href="#" class="sub-point">Новинки</a>
+                  <a href="#" class="sub-point new">Новинки</a>
                 </li>
                 <li>
                   <a href="#" class="sub-point sub-selected">Сливочное</a>
@@ -51,7 +51,7 @@
           </ul>
         </nav>
         <ul class="user-block">
-          <li>
+          <li class="user-search">
             <a href="#" class="search-link">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
                    height="17" viewBox="0 0 17 17">
@@ -59,38 +59,26 @@
           1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
               </svg>
             </a>
-            <div class="search">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <p>
                   <label class="visually-hidden" for="search-field">Поле поиска</label>
                   <input class="search-field" type="search" id="search-field" placeholder="Что ищем?">
                 </p>
               </form>
-            </div>
           </li>
-          <li>
-            <a href="#" class="login-link">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
-                   viewBox="0 0 21 19">
-                <g class="enter" fill="#ffffff">
-                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                  <path
-                    d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                </g>
-              </svg>
-              Вход
-            </a>
-            <div class="login">
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <label class="visually-hidden" for="login-mail">Электронная почта</label>
-                  <input type="text" id="login-mail" placeholder="Электронная почта">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="login-password">Пароль</label>
-                  <input type="password" id="login-password" placeholder="Пароль">
-                </p>
-                <button type="submit" class="button">Войти</button>
+          <li class="user-login">
+            <a href="#" class="login-link">Вход</a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="login-mail">Электронная почта</label>
+                <input type="text" id="login-mail" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input type="password" id="login-password" placeholder="Пароль">
+              </p>
+              <div class="login-wrapper">
+                <button type="submit" class="button login-button">Войти</button>
                 <ul class="login-help">
                   <li>
                     <a href="#">Забыли пароль?</a>
@@ -99,14 +87,11 @@
                     <a href="#">Новая регистрация</a>
                   </li>
                 </ul>
-              </form>
-            </div>
+              </div>
+            </form>
           </li>
           <li>
-            <a href="#" class="basket-link">
-              <img src="img/basket.svg" width="21" height="20" alt="Корзина">
-              Пусто
-            </a>
+            <a href="#" class="basket-link">Пусто</a>
           </li>
         </ul>
       </div>
